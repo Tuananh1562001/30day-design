@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Lobster&family=Mochiy+Pop+P+One&family=Poppins:ital,wght@0,100;0,200;0,300;1,400&display=swap');
+
+:root{
+    --primary-color:#f2726a;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(45deg, #00853e, #50c878);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "poppins";
+    color: #fff;
+}
+.card{
+    width: 300px;
+    height: 400px;
+    background-color: #242628;
+    border-radius: 10px;
+    text-align: center;
+    overflow: hidden;
+}
+.card__img{
+    width: 120px;
+    height: 120px;
+    border: 2px solid var(--primary-color);
+    border-radius: 50%;
+    margin: 0 auto;
+    overflow: hidden;
+    transform: translateY(25px);
+    transition: 0.25s;
+}
+.card__img:hover{
+    width: 100%;
+    height: 100%;
+    border-radius: unset;
+    transform: unset;
+    border: none;
+}
+.card__img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.card h1{
+    margin: 20px 0;
+}
+.card p{
+    color: var(--primary-color);
+}
+.card__social{
+    margin: 20px 0;
+    width: 100%;
+    height: 50px;
+}
+.card__social a{
+    width: 50px;
+    height: 100%;
+    color: white;
+    margin: 25px 15px;
+}
+.card__social a i{  
+    font-size: 30px;
+}
+.card__social a i:hover{
+    color: var(--primary-color);
+}
+button{
+  outline: none;
+  border: none;
+  color: white;
+  background-color: transparent;
+  border: 1px solid var(--primary-color);
+  padding: 10px 20px;
+  border-radius: inherit;
+  cursor: pointer;
+  transition: 0.25s;
+}
+button:hover{
+    background-color: var(--primary-color);
+}
+
+
+
